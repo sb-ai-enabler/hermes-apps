@@ -124,9 +124,9 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen items-center justify-center px-4 py-8 sm:px-6">
-      <section className="w-full max-w-sm rounded-lg border border-white/70 bg-white/85 p-5 shadow-2xl shadow-slate-300/50 backdrop-blur sm:p-6">
+      <section className="w-full max-w-sm rounded-lg border border-white/15 bg-white/90 p-5 shadow-2xl shadow-indigo-500/20 backdrop-blur sm:p-6">
         <div className="mb-5 rounded-lg bg-slate-950 p-5 text-right text-white shadow-inner">
-          <p className="min-h-6 text-sm font-medium text-cyan-200">{expression}</p>
+          <p className="min-h-6 text-sm font-medium text-indigo-200">{expression}</p>
           <p className="mt-3 min-h-14 break-all text-4xl font-semibold tracking-normal sm:text-5xl">
             {display}
           </p>
@@ -160,7 +160,7 @@ export default function Home() {
                   onClick={isEquals ? evaluate : clearCalculator}
                   className={`${baseClass} ${button.className ?? ""} ${
                     isEquals
-                      ? "bg-emerald-500 text-white shadow-emerald-200 hover:bg-emerald-600 focus:ring-emerald-200"
+                      ? "bg-indigo-500 text-white shadow-indigo-200 hover:bg-indigo-600 focus:ring-indigo-200"
                       : "bg-rose-500 text-white shadow-rose-200 hover:bg-rose-600 focus:ring-rose-200"
                   }`}
                 >
@@ -174,7 +174,7 @@ export default function Home() {
                 key={button.label}
                 type="button"
                 onClick={() => inputNumber(button.label)}
-                className={`${baseClass} ${button.className ?? ""} border border-slate-200 bg-white text-slate-900 hover:border-cyan-200 hover:bg-cyan-50 focus:ring-cyan-100`}
+                className={`${baseClass} ${button.className ?? ""} border border-slate-200 bg-white text-slate-900 hover:border-indigo-200 hover:bg-indigo-50 focus:ring-indigo-100`}
               >
                 {button.label}
               </button>
